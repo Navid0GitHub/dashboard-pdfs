@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نمایش PDF</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+    <div class="viewer-container">
+        <div class="header">
+            <div class="header-logo">
+                <img src="png logo/باسلام.png" alt="لوگو" class="header-logo-img">
+            </div>
+            <div class="controls">
+                <button id="zoomOut" class="control-btn">-</button>
+                <span id="zoomLevel">100%</span>
+                <button id="zoomIn" class="control-btn">+</button>
+                <button id="prevPage" class="control-btn">صفحه قبل</button>
+                <span id="pageInfo">صفحه 1 از 1</span>
+                <button id="nextPage" class="control-btn">صفحه بعد</button>
+                <button id="logout" class="control-btn logout-btn">خروج</button>
+            </div>
+        </div>
+        <div class="pdf-container">
+            <canvas id="pdfCanvas"></canvas>
+        </div>
+    </div>
+    <script src="viewer.js"></script>
+</body>
+</html>
